@@ -98,7 +98,7 @@ public class MyFileActivity extends Activity {
             for (int i = 0; i < files.length; i++) {
                 if (files[i].isDirectory()) {
                     items.add(files[i].getName());
-                    paths.add(files[i].getpath());
+                   // paths.add(files[i].getpath());
                     sizes.add("");
                 }
             }

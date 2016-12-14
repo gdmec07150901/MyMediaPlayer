@@ -95,7 +95,7 @@ public class MainActivity extends Activity {
         });
         holder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
         player = new MediaPlayer();
-        player.setOnCompletionListener(new MediaPlayer.OnPreparedListener(){
+       /* player.setOnCompletionListener(new MediaPlayer.OnPreparedListener(){
 
             @Override
             public void onPrepared(MediaPlayer mp) {
@@ -104,7 +104,7 @@ public class MainActivity extends Activity {
                     timer = null;
                 }
             }
-        });
+        });*/
         player.setOnPreparedListener(new MediaPlayer.OnPreparedListener(){
 
             @Override
@@ -205,7 +205,7 @@ public class MainActivity extends Activity {
             public void run() {
                 Message message = new Message();
                 message.what = 1;
-                handler.sendMessage(message);
+                //handler.sendMessage(message);
             }
         }
 
